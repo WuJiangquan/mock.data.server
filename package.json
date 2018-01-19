@@ -1,0 +1,24 @@
+{
+    "name": "mock.server",
+    "version": "1.0.0",
+    "description": "uses to provide mock data for frond-end ,android or ios developer",
+    "main": "server.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node server.js",
+        "debug": "node --debug server.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/WuJiangquan/mock.server.git"
+    },
+    "keywords": ["fron-end", "ios", "andriod", "mockjs", "mock data"],
+    "author": "Wujiangquan",
+    "license": "ISC",
+    "dependencies": {
+        "mockjs": "^1.0.1-beta3"
+    },
+    "devDependencies": {
+        "canvas": "^1.6.9"
+    }
+}
