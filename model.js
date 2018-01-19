@@ -12,6 +12,7 @@ module.exports = {
             "01": "jon",
             "02": "winess"
         },
+        "device|fixed": "andoid",
         "letter|enum|1,2": ["a", "b", "c", "d"],
         "sons|in|1,10": ["sonA", "sonB", "sonC"],
         "target": function(params, context) {
