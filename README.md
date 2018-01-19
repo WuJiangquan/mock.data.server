@@ -51,3 +51,6 @@ https://nodejs.org/zh-cn/download/
 ```
 {"name":"qirqq","id":8.29863,"age":1,"rich":44891.26424455259,"is_vip":true,"children":["abc","abc"],"wife":{"02":"winess"},"letter":["a","b","c","d"],"sons":["sonC","sonB",null,null,null,null,null,null],"target":45891.26424455259,"game":"145893160735","startTime":"2005/11/28 11:50:53","endTime":"02:12:52","now":"2018-01-19 15:00:00","avatar":"://dummyimage.com/100x100","email":"t.jfpgewfmjm@bgu.ml","address":"云南省 怒江傈僳族自治州 泸水县","zip":"821926","title":"花基做对"}
 ```
+
+## 查看请求参数
+  youthost/mymyPostData
