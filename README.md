@@ -1,4 +1,7 @@
 # 下载
+## [node安装](https://nodejs.org/zh-cn/download/)
+https://nodejs.org/zh-cn/download/
+## mock.data.server
 `git clone https://github.com/WuJiangquan/mock.data.server.git`
 # 安装
 `cd mock.data.server`
