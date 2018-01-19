@@ -11,7 +11,7 @@ module.exports = {
             "02": "winess"
         },
         "sons|in|1": ["sonA", "sonB", "sonC"],
-        "func": function(params, context) {
+        "target": function(params, context) {
             return context.rich + 1000;
         },
         game: "reg|^1[0-9]{11}",
