@@ -1,16 +1,19 @@
 module.exports = {
     "/api/activity": {
-        name: "cfirst",
-        id: "string|number|5",
+        name: "string|qwertyuio|5",
+        id: "float|5,10",
         age: "increment|1",
         rich: "float|,100000",
         is_vip: "boolean",
-        "children|foreach|4,10": "string|lower|6",
+        "children|foreach|2": function() {
+            return "abc"
+        },
         "wife|enum|1": {
             "01": "jon",
             "02": "winess"
         },
-        "sons|in|1": ["sonA", "sonB", "sonC"],
+        "letter|enum|1,2": ["a", "b", "c", "d"],
+        "sons|in|1,10": ["sonA", "sonB", "sonC"],
         "target": function(params, context) {
             return context.rich + 1000;
         },
