@@ -17,8 +17,5 @@
     "license": "ISC",
     "dependencies": {
         "mockjs": "^1.0.1-beta3"
-    },
-    "devDependencies": {
-        "canvas": "^1.6.9"
     }
 }
