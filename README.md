@@ -53,4 +53,4 @@ https://nodejs.org/zh-cn/download/
 ```
 
 ## 查看请求参数
-  youthost/mymyPostData
+  youthost/myPostData
