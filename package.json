@@ -1,5 +1,5 @@
 {
-    "name": "mock.server",
+    "name": "mock.data.server",
     "version": "1.0.0",
     "description": "uses to provide mock data for frond-end ,android or ios developer",
     "main": "server.js",
