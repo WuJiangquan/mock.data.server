@@ -54,3 +54,47 @@ https://nodejs.org/zh-cn/download/
 
 ## 查看请求参数
   youthost/myPostData
+  
+# 配置
+## 1.string
+### 语法
+   string|type|range
+### type
+   string的类型。 包括：lower,upper,number,symbol,aeiou
+   #### lower  小写字幕
+   #### upper  小写字幕
+   #### number 小写字幕
+   #### symbol 小写字幕
+   #### aeiou  从列举的字符串中选择数据
+### range
+   min?,min？ 
+   生成的字符串的长度范围
+   如果只有min 的时候，只生成min个字符。
+### 实例
+`name:"string"`  生成结果： `{name:"RM!x"}` //随机长度的随机字符
+
+`name : "string|5"`生成结果： `{name:"OK7Pj"}` //长度5 的随机字符
+
+`name:"string|5,10"`  生成结果： `{name:"RM!x"}` //随机长度的随机字符
+
+`name : "string|5"`生成结果： `{name:"RpkxIU&q"}` //长度5 到10的随机字符
+
+`name:"string|number|5"`  生成结果： `{name:"42604"}` //长度为5 的数字
+
+`name : "string|symbol|5"`生成结果： `{name:"#*)%^"}` //长度5 的符号字符串
+
+## 2.number
+### 语法
+   type|range
+### type
+   number的类型。 包括：number,int,float
+### range
+   min?,min？ 
+   生成的数字的数值范围
+   
+### 实例
+`name:"number"`  生成结果： `{name:7479130858318088}` //随机大小的数字
+
+`name : "number|5"`生成结果： `{name:5975769678873772}` //长度5 的随机字符
+
+`name:"number|5,10"`  生成结果： `{name:6}` //[5,10]区间的数字

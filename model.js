@@ -1,7 +1,7 @@
 module.exports = {
     "/api/activity": {
-        name: "string|qwertyuio|5",
-        id: "float|5,10",
+        name: "string|symbol|5",
+        id: "number|5,10",
         age: "increment|1",
         rich: "float|,100000",
         is_vip: "boolean",
