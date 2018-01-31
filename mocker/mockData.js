@@ -139,6 +139,9 @@ var createRandomData = function(req, model) {
             var fieldName = prop.split("|")[0];
             rule = prop.replace(fieldName + "|", "")
             data[fieldName] = createIterationData(rule, model[prop], req);
+        } else if (/\|fixed/.test(prop)) {
+            var fieldName = prop.split("|")[0];
+            data[fieldName] = rule
         } else if (/\|in/.test(prop)) {
             var fieldName = prop.split("|")[0];
             rule = prop.replace(fieldName + "|", "");
