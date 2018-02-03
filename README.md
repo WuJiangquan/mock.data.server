@@ -273,10 +273,10 @@ https://nodejs.org/zh-cn/download/
    `name: "cfirst"` 生成结果 `"name":"刘"`
    
    `name: "clast"` 生成结果 `"name":"刚"`
-## 8. email
+## 9. email
 ### 实例
   `email: "email"` 生成结果 `"email":"d.qijlt@sicc.bi"`
-## 9. address
+## 10. address
 ### 语法
    fielname : "type"
 #### type
@@ -293,7 +293,7 @@ https://nodejs.org/zh-cn/download/
 ### 实例
  `address: "county1"`  生成结果： `"address":"河北省 秦皇岛市 海港区"`
  
-## 10.循环
+## 11.循环
 ### 语法
   fielName|foreach|number : rule
 ### fielName
