@@ -218,28 +218,82 @@ https://nodejs.org/zh-cn/download/
 
 ## 7.text 文本
 ### 语法
- text|type?|range?
+  type|range?
 ### type 文字的类型
-  pararah
-  sentence
-  word、title、cpararah、csentence、cword、ctitle
-### background， 
-   16进制的颜色表示，比如 #4A7BF7 
-### text 在图片中插入文本
+  pararah : 段落
+  
+  sentence : 句子
+  
+  word : 词语
+  
+  title : 标题
+  
+  cpararah : 中文段落
+  
+  csentence: 中文句子
+  
+  cword ： 中文词语
+  
+  ctitle: 中文标题
+  
+### range 
+   长度范围.
+#### pararah|range  cpararah|range
+    range 表示这段话包含多少句话，比如pararah|2，则这段话包含两句话  pararah|2,3 这段话包含2 到3局话。
+#### sentence|range  title|range  csentence|range  ctitle|range  cword|range
+   range 表示这个句子 或者标题 包含多少个单词 比如sentence|3 表明这句话包含3个单词，sentence|3,10 表明这句话包含3 到10 个单词
+
+#### word|range
+   range 表示这句话有多少个字母
+
 ### 实例
-   `avatar: "img|200x300,#4A7BF7,ff00ff"`
+   `title: "ctitle|1,12"` 生成结果 `"title":"象千量年市增划"`
    
-   生成结果：
+   `title: "word|3"` 生成结果 `"title":"vpm"`
    
-   ![image](https://dummyimage.com/200x300/4A7BF7&text=%E6%96%87%E5%AD%97)
+## 8. name 名字 
+### 语法
+   type
+   包括：
+   name : firstName + lastName 
+   first : firstName
+   last  : lastName
+   cname  : 姓 ＋ 名 
+   cfirst : 姓
+   clast : 名
+### 实例
+  `name: "name"` 生成结果 `"name":"Edward Allen"`
    
-    `avatar: "img|200x300,ff00ff"`
- 生成结果(没有设置颜色，则默认为黑色的图片)：
+   `name: "first"` 生成结果 `"name":"Joseph"`
    
-   ![image](https://dummyimage.com/200x300/文字)
+   `name: "last"` 生成结果 `"name":"Rodriguez"`
+   
+   `name: "cname"` 生成结果 `"name":"刘刚"`
+   
+   `name: "cfirst"` 生成结果 `"name":"刘"`
+   
+   `name: "clast"` 生成结果 `"name":"刚"`
+## 8. email
+### 实例
+  `email: "email"` 生成结果 `"email":"d.qijlt@sicc.bi"`
+## 9. address
+### 语法
+   fielname : "type"
+#### type
+   province 省 如 广东
+   
+   city 市   如广州
+   
+   county 区 如 天河 
+   
+   city1 省市 如 广东省广州市
+   
+   county1 省市区 广东省广州市天河区
 
-
-## .循环
+### 实例
+ `address: "county1"`  生成结果： `"address":"河北省 秦皇岛市 海港区"`
+ 
+## 10.循环
 ### 语法
   fielName|foreach|number : rule
 ### fielName
@@ -250,7 +304,6 @@ https://nodejs.org/zh-cn/download/
 ### 实例
 `"student|foreach|3": "string|upper|5"`  生成结果： `"student":["FXRNY","TQBRZ","CCWIU"]` // 当前学生字段产生长度为3 的数组，数组内容为长度为5 的大写字母
 
-`"student|foreach|3": "string|upper|5"`  生成结果： `"student":["FXRNY","TQBRZ","CCWIU"]` // 当前学生字段产生长度为3 的数组，数组内容为长度为5 的大写字母
 
 ```
  "student|foreach|3": {
