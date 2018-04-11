@@ -1,4 +1,4 @@
-var Base = require("./Base");
+var Base = require("./base");
 
 class AddressMock extends Base {
     constructor(param) {

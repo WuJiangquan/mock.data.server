@@ -1,4 +1,4 @@
-var Base = require("./Base");
+var Base = require("./base");
 
 class NumberMock extends Base {
     constructor(param) {
