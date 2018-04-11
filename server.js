@@ -42,7 +42,7 @@ var server = http.createServer(function(request, response) {
     }
 })
 
-server.listen(8080, function(err) {
+server.listen(80, function(err) {
     if (err) {
         throw err;
     }
