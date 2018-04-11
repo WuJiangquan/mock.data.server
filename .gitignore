@@ -1,0 +1,23 @@
+.DS_Store
+node_modules/
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+sftp-config.json
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+/.idea
+/.temp
+/_temp
+/src/.sass-cache
+src/node_modules
+npm-debug.log
+sftp-config.json
+/.qbcache/
