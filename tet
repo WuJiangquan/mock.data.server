@@ -1,0 +1,64 @@
+类型：
+1.string   string|type?|range?
+  type : 1)lower  2)upper 3)number 4)symbol 5)aeiou
+  range : min?,max？ min缺省的时候为0
+ 
+2.number   type|min?,max?
+  1) int | 100,300     int | 100     int | ,300 
+  2) float | 100,300   float|100      float|,300
+  3) number | 100,300     number | 100     number | ,300 
+3.boolean   boolean|trueRate
+  boolean   boolean|0.75  
+4.枚举
+  fielName|enum|range : []
+  fielName |enum|range : {
+       
+  }
+ '
+  fileName|in|range : []
+   
+5. 循环
+   fielName|foreach|number : rule,
+  fielName|foreach|number : {},
+
+  
+6. function(context, params){
+    
+ }
+
+7. reg|正则内容
+
+9.idcard
+
+
+10 date   date|format
+     date|yyyy-mm-dd
+   format: 1)yyyy-MM-dd  2)  yy-MM-dd  3) y-M-d 4)T 时间戳
+11 time   time|format
+     time|yyyy-mm-dd
+     format : A  HH:mm:ss   a HH:mm:ss   H:m:s
+12 datetime    datetime|format      format 是 date 和 time 的format 的组合
+
+13 img   img|size,text
+
+15text  text|type|range
+   type :  pararah、sentence、word、title、cpararah、csentence、cword、ctitle
+
+16  name
+      type:name  first last  cname   cfirst clast
+
+17ip
+
+18 email
+
+19 address
+     region : 华南
+     province: 广东
+     city :  广州  
+     city1: 广东省 广州市
+     country : 天河区
+     country1 ： 广东省  广州市 天河区
+     zip 邮政编码
+
+20 increment｜step自增
+  
